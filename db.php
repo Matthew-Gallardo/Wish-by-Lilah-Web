@@ -1,7 +1,7 @@
 <?php
 $host = 'localhost';
-$user = 'wishaapm_wish_admin';
-$pass = 'adminwish12345';
+$user = 'root';
+$pass = '';
 $dbname = 'wishaapm_backend';
 
 $conn = new mysqli($host, $user, $pass, $dbname);
