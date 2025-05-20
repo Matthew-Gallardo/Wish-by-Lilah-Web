@@ -1,0 +1,531 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    background: url('assets/ENTRANCE.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(4px);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(126, 36, 47, 0.95);
+    padding: 40px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Logo in login page */
+.login-box img {
+    max-width: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px; /* Add this line to create space below the logo */
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box; /* Add this to ensure padding doesn't affect width */
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5e0b15;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #49000d;
+}
+
+.login-box .error {
+    background: #ffcccc;
+    color: #900;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.login-box a {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #f8f8f8;
+    text-decoration: underline;
+}
+
+.return-link {
+    margin-top: 5px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #891d26;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo in sidebar */
+.sidebar img {
+    max-width: 160px;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    padding: 8px 0;
+    transition: all 0.2s ease;
+}
+
+.sidebar a:hover {
+    padding-left: 5px;
+}
+
+.sidebar a.active {
+    font-weight: bold;
+    border-left: 3px solid white;
+    padding-left: 10px;
+}
+
+.main {
+    flex-grow: 1;
+    background-color: #fffaf0;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.main h1 {
+    text-align: center;
+    font-size: 36px; /* Make it bigger */
+    margin-bottom: 10px;
+}
+
+.main .subheading {
+    text-align: center;
+    font-size: 20px;
+    color: #891d26;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #891d26;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td a {
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* Main container next to sidebar */
+.testimonial-container {
+    margin-left: 220px;
+    padding: 40px 60px;
+}
+
+/* Tabs above testimonials */
+.testimonial-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #891d26;
+}
+
+.testimonial-tabs a {
+    padding: 12px 25px;
+    color: #891d26;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 10px;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.testimonial-tabs a:hover {
+    border-bottom: 3px solid rgba(137, 29, 38, 0.5);
+}
+
+.testimonial-tabs a.active {
+    border-bottom: 3px solid #891d26;
+}
+
+/* Testimonial cards layout */
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+/* Individual card style */
+.testimonial-card {
+    background: white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 280px;
+    padding: 20px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    position: relative;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.testimonial-card h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #891d26;
+    margin-bottom: 5px;
+}
+
+.testimonial-card p {
+    font-size: 13px;
+    color: #555;
+    margin: 6px 0;
+}
+
+.testimonial-card .stars {
+    color: #d8232a;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Action buttons */
+.testimonial-card .actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.testimonial-card .actions button {
+    flex: 1;
+    padding: 8px;
+    font-size: 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.testimonial-card .accept {
+    background-color: #891d26;
+    color: white;
+}
+
+.testimonial-card .reject {
+    background-color: white;
+    color: #891d26;
+    border: 1px solid #891d26;
+}
+
+/* Close (X) button */
+.testimonial-card .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: #891d26;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Image preview */
+.testimonial-card .image-preview {
+    width: 100%;
+    height: 120px;
+    background-color: #d9a1a1;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.testimonial-card .image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Tab bar at the top (Add | Edit | Delete) */
+.offer-tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #891d26;
+    margin-bottom: 30px;
+}
+
+.offer-tabs a {
+    color: white;
+    padding: 12px 25px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.offer-tabs a:hover,
+.offer-tabs a.active {
+    background-color: #5e0b15;
+}
+
+/* Grid layout for offer cards */
+.offer-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Individual offer card */
+.offer-card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.offer-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.offer-card .offer-content {
+    padding: 15px;
+    font-size: 13px;
+    color: #333;
+    flex-grow: 1;
+}
+
+.offer-card button {
+    background-color: #891d26;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.offer-card button:hover {
+    background-color: #5e0b15;
+}
+
+/* Button Styles */
+button.accept, 
+button[name="action"][value="accept"] {
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+button.accept:hover, 
+button[name="action"][value="accept"]:hover {
+    background-color: #3e8e41;
+}
+
+/* Reject/Delete Button */
+button.reject, 
+button[name="action"][value="reject"],
+button[name="action"][value="delete"] {
+    background-color: white;
+    color: #891d26;
+    border: 1px solid #891d26;
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+button.reject:hover, 
+button[name="action"][value="reject"]:hover,
+button[name="action"][value="delete"]:hover {
+    background-color: #f8d7da;
+}
+
+/* Status Badge */
+.approved-badge {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Alert Messages */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.success, .alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error, .alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Action Buttons in Dashboard */
+.action-buttons a {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.status-icon {
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+/* Form Layout for Testimonial Actions */
+form[action="testimonial_action.php"] {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* No Records Message */
+.no-records {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #6c757d;
+    border: 1px solid #dee2e6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .sidebar img {
+        max-width: 120px;
+        margin-bottom: 15px;
+    }
+    
+    .main {
+        padding: 20px;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+    
+    .testimonial-tabs a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
